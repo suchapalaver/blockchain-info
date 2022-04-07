@@ -1,5 +1,7 @@
 //! src/blockchain_address.rs
 
+use serde_derive::Deserialize;
+
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct BlockchainAddress {
@@ -15,4 +17,3 @@ pub struct BlockchainAddress {
     // txs: i64,
     pub txids: Vec<String>
 }
-

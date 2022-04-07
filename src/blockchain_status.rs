@@ -1,5 +1,7 @@
 //! src/blockchain_status.rs
 
+use serde_derive::Deserialize;
+
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 pub struct Blockbook {
