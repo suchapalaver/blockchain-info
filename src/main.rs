@@ -4,7 +4,6 @@ use {
     blockchain_info::blockchain_address::BlockchainAddress,
     blockchain_info::blockchain_status::BlockchainStatus,
     blockchain_info::blockchain_transaction::BlockchainTransaction,
-    dotenv,
     std::{io, thread, time},
 };
 
@@ -46,7 +45,7 @@ fn blockchain_info_app(address: &str) {
             let mut subtotal_vout: i32 = 0;
 
             let blockchain_transaction: BlockchainTransaction =
-                blockchain_info::blockchain_transaction_request(&tx_id); // transaction block address
+                blockchain_info::blockchain_transaction_request(tx_id); // transaction block address
 
             let match_address = String::from(address);
             for tx in &blockchain_transaction.vin {
@@ -61,7 +60,7 @@ fn blockchain_info_app(address: &str) {
                 }
             }
 
-            balance += &subtotal_vout - &subtotal_vin;
+            balance += subtotal_vout - subtotal_vin;
 
             println!("-----------------------------------------------------");
             println!("TX ID:           {}", &blockchain_transaction.txid);
