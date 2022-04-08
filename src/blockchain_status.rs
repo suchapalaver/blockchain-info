@@ -2,7 +2,7 @@
 
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
-pub struct BlockBook {
+pub struct Blockbook {
     pub coin: String,
     // host: String,
     // version: String,
