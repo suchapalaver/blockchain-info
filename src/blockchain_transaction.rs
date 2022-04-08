@@ -31,12 +31,12 @@ pub struct BlockchainTransaction {
     // lock_time: i64,
     pub vin: Vec<Vin>, // Satoshi out
     pub vout: Vec<Vout>, // Satoshi in
-    // block_hash: String,
-    // block_height: i64,
-    // confirmations: i64,
-    // block_time: i64,
-    // value: String,
-    // value_in: String,
-    // fees: String,
-    // hex: String,
+                       // block_hash: String,
+                       // block_height: i64,
+                       // confirmations: i64,
+                       // block_time: i64,
+                       // value: String,
+                       // value_in: String,
+                       // fees: String,
+                       // hex: String,
 }
