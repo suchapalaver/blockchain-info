@@ -29,8 +29,8 @@ pub struct BlockchainTransaction {
     pub txid: String,
     // version: i64,
     // lock_time: i64,
-    pub vin: Vec<Vin>,
-    pub vout: Vec<Vout>,
+    pub vin: Vec<Vin>, // Satoshi out
+    pub vout: Vec<Vout>, // Satoshi in
     // block_hash: String,
     // block_height: i64,
     // confirmations: i64,
